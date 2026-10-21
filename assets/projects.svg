@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="440" viewBox="0 0 900 440" fill="none">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#062b2a"/><stop offset="1" stop-color="#0b1d2e"/></linearGradient>
+<linearGradient id="bar" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#2dd4bf"/><stop offset="1" stop-color="#38bdf8"/></linearGradient>
+</defs>
+<rect x="2" y="2" width="896" height="436" rx="22" fill="url(#bg)" stroke="#2dd4bf" stroke-opacity=".35"/>
+<text x="30" y="40" font-family="Consolas,'Courier New',monospace" font-size="14" fill="#2dd4bf">PROJECTS.LIST  ./projects.sh --all</text>
+<circle cx="868" cy="35" r="5" fill="#4ade80"><animate attributeName="opacity" values="1;.2;1" dur="1.6s" repeatCount="indefinite"/></circle>
+
+<g>
+<animateTransform attributeName="transform" type="translate" values="0 18;0 0" dur=".7s" begin="0.0s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines=".2 .8 .2 1"/>
+<animate attributeName="opacity" values="0;1" dur=".7s" begin="0.0s" fill="freeze"/>
+<rect x="30" y="62" width="410" height="108" rx="14" fill="#0a1f22" stroke="#2dd4bf" stroke-opacity=".4"/>
+<rect x="30" y="76" width="4" height="80" rx="2" fill="url(#bar)"><animate attributeName="opacity" values=".5;1;.5" dur="3s" begin="0.0s" repeatCount="indefinite"/></rect>
+<text x="54" y="102" font-family="Consolas,'Courier New',monospace" font-size="19" font-weight="700" fill="#ccfbf1">Portfolio<animate attributeName="opacity" values="1;.75;1" dur="3s" repeatCount="indefinite"/></text>
+<text x="54" y="128" font-family="'Segoe UI',Arial,sans-serif" font-size="14" fill="#99f6e4" fill-opacity=".8">Personal portfolio website</text>
+<rect x="54" y="138" width="150" height="22" rx="11" fill="#0f766e" fill-opacity=".4" stroke="#2dd4bf" stroke-opacity=".6"/>
+<text x="65" y="153" font-family="'Segoe UI',Arial,sans-serif" font-size="12" font-weight="600" fill="#ccfbf1">TypeScript · MIT</text>
+</g>
+<g>
+<animateTransform attributeName="transform" type="translate" values="0 18;0 0" dur=".7s" begin="0.2s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines=".2 .8 .2 1"/>
+<animate attributeName="opacity" values="0;1" dur=".7s" begin="0.2s" fill="freeze"/>
+<rect x="460" y="62" width="410" height="108" rx="14" fill="#0a1f22" stroke="#2dd4bf" stroke-opacity=".4"/>
+<rect x="460" y="76" width="4" height="80" rx="2" fill="url(#bar)"><animate attributeName="opacity" values=".5;1;.5" dur="3s" begin="0.2s" repeatCount="indefinite"/></rect>
+<text x="484" y="102" font-family="Consolas,'Courier New',monospace" font-size="19" font-weight="700" fill="#ccfbf1">hash-benchmarker<animate attributeName="opacity" values="1;.75;1" dur="3s" repeatCount="indefinite"/></text>
+<text x="484" y="128" font-family="'Segoe UI',Arial,sans-serif" font-size="14" fill="#99f6e4" fill-opacity=".8">Benchmark hashing approaches</text>
+<rect x="484" y="138" width="102" height="22" rx="11" fill="#0f766e" fill-opacity=".4" stroke="#2dd4bf" stroke-opacity=".6"/>
+<text x="495" y="153" font-family="'Segoe UI',Arial,sans-serif" font-size="12" font-weight="600" fill="#ccfbf1">TypeScript</text>
+</g>
+<g>
+<animateTransform attributeName="transform" type="translate" values="0 18;0 0" dur=".7s" begin="0.4s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines=".2 .8 .2 1"/>
+<animate attributeName="opacity" values="0;1" dur=".7s" begin="0.4s" fill="freeze"/>
+<rect x="30" y="186" width="410" height="108" rx="14" fill="#0a1f22" stroke="#2dd4bf" stroke-opacity=".4"/>
+<rect x="30" y="200" width="4" height="80" rx="2" fill="url(#bar)"><animate attributeName="opacity" values=".5;1;.5" dur="3s" begin="0.4s" repeatCount="indefinite"/></rect>
+<text x="54" y="226" font-family="Consolas,'Courier New',monospace" font-size="19" font-weight="700" fill="#ccfbf1">Padhle-AI<animate attributeName="opacity" values="1;.75;1" dur="3s" repeatCount="indefinite"/></text>
+<text x="54" y="252" font-family="'Segoe UI',Arial,sans-serif" font-size="14" fill="#99f6e4" fill-opacity=".8">AI-powered study helper</text>
+<rect x="54" y="262" width="102" height="22" rx="11" fill="#0f766e" fill-opacity=".4" stroke="#2dd4bf" stroke-opacity=".6"/>
+<text x="65" y="277" font-family="'Segoe UI',Arial,sans-serif" font-size="12" font-weight="600" fill="#ccfbf1">JavaScript</text>
+</g>
+<g>
+<animateTransform attributeName="transform" type="translate" values="0 18;0 0" dur=".7s" begin="0.6s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines=".2 .8 .2 1"/>
+<animate attributeName="opacity" values="0;1" dur=".7s" begin="0.6s" fill="freeze"/>
+<rect x="460" y="186" width="410" height="108" rx="14" fill="#0a1f22" stroke="#2dd4bf" stroke-opacity=".4"/>
+<rect x="460" y="200" width="4" height="80" rx="2" fill="url(#bar)"><animate attributeName="opacity" values=".5;1;.5" dur="3s" begin="0.6s" repeatCount="indefinite"/></rect>
+<text x="484" y="226" font-family="Consolas,'Courier New',monospace" font-size="19" font-weight="700" fill="#ccfbf1">Student Record Mgmt System<animate attributeName="opacity" values="1;.75;1" dur="3s" repeatCount="indefinite"/></text>
+<text x="484" y="252" font-family="'Segoe UI',Arial,sans-serif" font-size="14" fill="#99f6e4" fill-opacity=".8">RBAC across 4 tiers, masked passwords</text>
+<rect x="484" y="262" width="30" height="22" rx="11" fill="#0f766e" fill-opacity=".4" stroke="#2dd4bf" stroke-opacity=".6"/>
+<text x="495" y="277" font-family="'Segoe UI',Arial,sans-serif" font-size="12" font-weight="600" fill="#ccfbf1">C</text>
+</g>
+<g>
+<animateTransform attributeName="transform" type="translate" values="0 18;0 0" dur=".7s" begin="0.8s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines=".2 .8 .2 1"/>
+<animate attributeName="opacity" values="0;1" dur=".7s" begin="0.8s" fill="freeze"/>
+<rect x="30" y="310" width="410" height="108" rx="14" fill="#0a1f22" stroke="#2dd4bf" stroke-opacity=".4"/>
+<rect x="30" y="324" width="4" height="80" rx="2" fill="url(#bar)"><animate attributeName="opacity" values=".5;1;.5" dur="3s" begin="0.8s" repeatCount="indefinite"/></rect>
+<text x="54" y="350" font-family="Consolas,'Courier New',monospace" font-size="19" font-weight="700" fill="#ccfbf1">Circular Queue Simulator<animate attributeName="opacity" values="1;.75;1" dur="3s" repeatCount="indefinite"/></text>
+<text x="54" y="376" font-family="'Segoe UI',Arial,sans-serif" font-size="14" fill="#99f6e4" fill-opacity=".8">Live Front/Rear index visualiser</text>
+<rect x="54" y="386" width="102" height="22" rx="11" fill="#0f766e" fill-opacity=".4" stroke="#2dd4bf" stroke-opacity=".6"/>
+<text x="65" y="401" font-family="'Segoe UI',Arial,sans-serif" font-size="12" font-weight="600" fill="#ccfbf1">HTML · C++</text>
+</g>
+<g>
+<animateTransform attributeName="transform" type="translate" values="0 18;0 0" dur=".7s" begin="1.0s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines=".2 .8 .2 1"/>
+<animate attributeName="opacity" values="0;1" dur=".7s" begin="1.0s" fill="freeze"/>
+<rect x="460" y="310" width="410" height="108" rx="14" fill="#0a1f22" stroke="#2dd4bf" stroke-opacity=".4"/>
+<rect x="460" y="324" width="4" height="80" rx="2" fill="url(#bar)"><animate attributeName="opacity" values=".5;1;.5" dur="3s" begin="1.0s" repeatCount="indefinite"/></rect>
+<text x="484" y="350" font-family="Consolas,'Courier New',monospace" font-size="19" font-weight="700" fill="#ccfbf1">mini-projects<animate attributeName="opacity" values="1;.75;1" dur="3s" repeatCount="indefinite"/></text>
+<text x="484" y="376" font-family="'Segoe UI',Arial,sans-serif" font-size="14" fill="#99f6e4" fill-opacity=".8">Small JS experiments</text>
+<rect x="484" y="386" width="102" height="22" rx="11" fill="#0f766e" fill-opacity=".4" stroke="#2dd4bf" stroke-opacity=".6"/>
+<text x="495" y="401" font-family="'Segoe UI',Arial,sans-serif" font-size="12" font-weight="600" fill="#ccfbf1">JavaScript</text>
+</g>
+</svg>

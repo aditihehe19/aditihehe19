@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="320" viewBox="0 0 900 320" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#062b2a"/>
+      <stop offset="1" stop-color="#0b1d2e"/>
+    </linearGradient>
+    <radialGradient id="glow">
+      <stop offset="0" stop-color="#2dd4bf" stop-opacity=".5"/>
+      <stop offset="1" stop-color="#2dd4bf" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="topFace" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ccfbf1"/>
+      <stop offset="1" stop-color="#5eead4"/>
+    </linearGradient>
+    <linearGradient id="leftFace" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2dd4bf"/>
+      <stop offset="1" stop-color="#0d9488"/>
+    </linearGradient>
+    <linearGradient id="rightFace" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0f766e"/>
+      <stop offset="1" stop-color="#134e4a"/>
+    </linearGradient>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#5eead4" opacity=".18"/>
+    </pattern>
+    <clipPath id="card"><rect x="8" y="8" width="884" height="304" rx="22"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#card)">
+    <rect x="8" y="8" width="884" height="304" fill="url(#bg)"/>
+    <rect x="8" y="8" width="884" height="304" fill="url(#dots)"/>
+
+    <!-- drifting glow -->
+    <circle r="200" fill="url(#glow)">
+      <animate attributeName="cx" values="120;300;120" dur="12s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="60;260;60" dur="12s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="220" fill="url(#glow)" opacity=".7">
+      <animate attributeName="cx" values="780;640;780" dur="10s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="260;80;260" dur="10s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- rising particles -->
+    <g fill="#99f6e4">
+      <circle cx="60" cy="300" r="2"><animate attributeName="cy" values="310;10" dur="7s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;.9;0" dur="7s" repeatCount="indefinite"/></circle>
+      <circle cx="210" cy="300" r="1.5"><animate attributeName="cy" values="310;10" dur="9s" begin="1s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;.8;0" dur="9s" begin="1s" repeatCount="indefinite"/></circle>
+      <circle cx="420" cy="300" r="2"><animate attributeName="cy" values="310;10" dur="8s" begin="2s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;.8;0" dur="8s" begin="2s" repeatCount="indefinite"/></circle>
+      <circle cx="560" cy="300" r="1.5"><animate attributeName="cy" values="310;10" dur="10s" begin="3s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;.9;0" dur="10s" begin="3s" repeatCount="indefinite"/></circle>
+      <circle cx="840" cy="300" r="2"><animate attributeName="cy" values="310;10" dur="6s" begin="1.5s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;.9;0" dur="6s" begin="1.5s" repeatCount="indefinite"/></circle>
+    </g>
+
+    <!-- 3D cube scene -->
+    <g transform="translate(730 150)">
+      <!-- ground shadow -->
+      <ellipse cx="0" cy="110" rx="60" ry="12" fill="#000" opacity=".35">
+        <animate attributeName="rx" values="60;46;60" dur="4s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values=".35;.2;.35" dur="4s" repeatCount="indefinite"/>
+      </ellipse>
+
+      <!-- orbit ring (back half) -->
+      <ellipse cx="0" cy="0" rx="120" ry="38" stroke="#5eead4" stroke-opacity=".35" stroke-dasharray="4 7" transform="rotate(-18)"/>
+      <ellipse cx="0" cy="0" rx="90" ry="28" stroke="#38bdf8" stroke-opacity=".3" stroke-dasharray="2 6" transform="rotate(22)"/>
+
+      <!-- floating cube -->
+      <g>
+        <animateTransform attributeName="transform" type="translate" values="0 6;0 -10;0 6" dur="4s" repeatCount="indefinite" calcMode="spline" keyTimes="0;.5;1" keySplines=".45 0 .55 1;.45 0 .55 1"/>
+        <polygon points="0,-62 54,-31 0,0 -54,-31" fill="url(#topFace)" stroke="#99f6e4" stroke-width="1.5" stroke-linejoin="round"/>
+        <polygon points="-54,-31 0,0 0,62 -54,31" fill="url(#leftFace)" stroke="#99f6e4" stroke-width="1.5" stroke-linejoin="round"/>
+        <polygon points="54,-31 0,0 0,62 54,31" fill="url(#rightFace)" stroke="#99f6e4" stroke-width="1.5" stroke-linejoin="round"/>
+        <!-- light sweep across faces -->
+        <polygon points="0,-62 54,-31 0,0 -54,-31" fill="#fff" opacity="0">
+          <animate attributeName="opacity" values="0;.45;0" dur="3s" repeatCount="indefinite"/>
+        </polygon>
+        <text x="-27" y="38" font-family="Consolas,'Courier New',monospace" font-size="22" font-weight="700" fill="#042f2e" text-anchor="middle" transform="skewY(30)">&lt;/&gt;</text>
+        <text x="27" y="38" font-family="Consolas,'Courier New',monospace" font-size="22" font-weight="700" fill="#99f6e4" text-anchor="middle" transform="skewY(-30)">{ }</text>
+      </g>
+
+      <!-- orbiting satellites (size changes for depth) -->
+      <g transform="rotate(-18)">
+        <circle r="5" fill="#ccfbf1">
+          <animateMotion dur="6s" repeatCount="indefinite" path="M-120,0 a120,38 0 1,0 240,0 a120,38 0 1,0 -240,0"/>
+          <animate attributeName="r" values="3;7;3" dur="6s" repeatCount="indefinite"/>
+        </circle>
+      </g>
+      <g transform="rotate(22)">
+        <circle r="4" fill="#7dd3fc">
+          <animateMotion dur="4.5s" repeatCount="indefinite" path="M90,0 a90,28 0 1,0 -180,0 a90,28 0 1,0 180,0"/>
+          <animate attributeName="r" values="2.5;5.5;2.5" dur="4.5s" repeatCount="indefinite"/>
+        </circle>
+      </g>
+    </g>
+
+    <!-- text -->
+    <text x="48" y="78" font-family="'Segoe UI',Arial,sans-serif" font-size="13" font-weight="700" letter-spacing="5" fill="#2dd4bf">@ADITIHEHE19
+      <animate attributeName="opacity" values="0;1" dur="1s" fill="freeze"/>
+    </text>
+    <text x="48" y="140" font-family="'Segoe UI',Arial,sans-serif" font-size="58" font-weight="800" fill="#ccfbf1">Aditi Kotnala
+      <animate attributeName="opacity" values="0;1" dur="1.4s" fill="freeze"/>
+      <animateTransform attributeName="transform" type="translate" values="-30 0;0 0" dur="1.2s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines=".2 .8 .2 1"/>
+    </text>
+
+    <!-- rotating taglines -->
+    <g font-family="Consolas,'Courier New',monospace" font-size="19" fill="#5eead4">
+      <text x="48" y="182">&gt; building things that work_
+        <animate attributeName="opacity" values="1;0;0" keyTimes="0;.33;.66" calcMode="discrete" dur="9s" repeatCount="indefinite"/>
+      </text>
+      <text x="48" y="182">&gt; C · C++ · Java · JS · TypeScript_
+        <animate attributeName="opacity" values="0;1;0" keyTimes="0;.33;.66" calcMode="discrete" dur="9s" repeatCount="indefinite"/>
+      </text>
+      <text x="48" y="182">&gt; learning in public, shipping often_
+        <animate attributeName="opacity" values="0;0;1" keyTimes="0;.33;.66" calcMode="discrete" dur="9s" repeatCount="indefinite"/>
+      </text>
+    </g>
+
+    <!-- floating language chips -->
+    <g font-family="'Segoe UI',Arial,sans-serif" font-size="14" font-weight="700" fill="#ccfbf1" text-anchor="middle">
+      <g>
+        <animateTransform attributeName="transform" type="translate" values="0 0;0 -5;0 0" dur="3s" repeatCount="indefinite"/>
+        <rect x="48" y="226" width="56" height="34" rx="17" fill="#0f766e" fill-opacity=".45" stroke="#2dd4bf"/><text x="76" y="248">C</text>
+      </g>
+      <g>
+        <animateTransform attributeName="transform" type="translate" values="0 0;0 -5;0 0" dur="3s" begin=".4s" repeatCount="indefinite"/>
+        <rect x="114" y="226" width="64" height="34" rx="17" fill="#0f766e" fill-opacity=".45" stroke="#2dd4bf"/><text x="146" y="248">C++</text>
+      </g>
+      <g>
+        <animateTransform attributeName="transform" type="translate" values="0 0;0 -5;0 0" dur="3s" begin=".8s" repeatCount="indefinite"/>
+        <rect x="188" y="226" width="68" height="34" rx="17" fill="#0f766e" fill-opacity=".45" stroke="#2dd4bf"/><text x="222" y="248">Java</text>
+      </g>
+      <g>
+        <animateTransform attributeName="transform" type="translate" values="0 0;0 -5;0 0" dur="3s" begin="1.2s" repeatCount="indefinite"/>
+        <rect x="266" y="226" width="106" height="34" rx="17" fill="#0f766e" fill-opacity=".45" stroke="#2dd4bf"/><text x="319" y="248">JavaScript</text>
+      </g>
+      <g>
+        <animateTransform attributeName="transform" type="translate" values="0 0;0 -5;0 0" dur="3s" begin="1.6s" repeatCount="indefinite"/>
+        <rect x="382" y="226" width="106" height="34" rx="17" fill="#0f766e" fill-opacity=".45" stroke="#2dd4bf"/><text x="435" y="248">TypeScript</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- animated border -->
+  <rect x="8" y="8" width="884" height="304" rx="22" stroke="#2dd4bf" stroke-opacity=".6" stroke-width="1.5" stroke-dasharray="40 1200">
+    <animate attributeName="stroke-dashoffset" values="0;-2480" dur="8s" repeatCount="indefinite"/>
+  </rect>
+  <rect x="8" y="8" width="884" height="304" rx="22" stroke="#2dd4bf" stroke-opacity=".25"/>
+</svg>
