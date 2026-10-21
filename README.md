@@ -25,11 +25,11 @@ I like learning in public and shipping small, useful things.
 | [Student Record Management System](https://github.com/aditihehe19/STUDENT-RECORD-MANAGEMENT-SYSTEM) | C app with 4-tier RBAC and password masking |
 | [Circular Queue Simulation](https://github.com/aditihehe19/Queue-Circular-Queue-Simulation-CCC-Project) | Interactive queue visualiser |
 
-## 🐍 Contribution trail
+## 👾 Pac-Man contribution trail
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/aditihehe19/aditihehe19/output/github-snake-dark.svg">
-  <img alt="Contribution snake" src="https://raw.githubusercontent.com/aditihehe19/aditihehe19/output/github-snake.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/aditihehe19/aditihehe19/output/pacman-contribution-graph-dark.svg">
+  <img alt="Pac-Man eating my contribution graph" src="https://raw.githubusercontent.com/aditihehe19/aditihehe19/output/pacman-contribution-graph.svg" width="100%">
 </picture>
 
 ## ♟️ Play the next move
